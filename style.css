@@ -1,0 +1,32 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  /* CONTENT */
+  --content-secondary: #C7C9CC; 
+  --content-tertiary: #D9D9D9;
+  --content-brand: #C58DE7;
+  --color-inverse: #030203;
+  /* BACKGROUND */
+  --background-primary: #020202;
+  --background-secondary: #111012;
+  --background-tertiary: #24222e;
+  --background-brand: #C58DE7;
+  --background-gray: #3D3D3D;
+  /* ACCENT */
+  --accent-pink: #d586e0;
+  --acent-blue: #91a1fa;
+  --accent-green: #77c0a0;
+  --accent-lime: #d1dc97;
+  --acent-red: #e9a9b3;
+  /* gradient */
+  --gradient-border: linear-gradient(to left, #77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%);
+  --gradient-background: linear-gradient(to left, #D586E0 0%, #91A1FA 98.93%);
+  --gradient-content: linear-gradient(to left, #C7C9CC 0%, #3D3D3D 100%);
+
+  
+}
+
