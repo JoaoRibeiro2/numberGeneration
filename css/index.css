@@ -1,0 +1,25 @@
+@import url('global.css');
+@import url('style.css');
+@import url('section.css');
+@import url('form.css');
+
+body{
+  background: var(--background-primary);
+}
+header{
+  display: flex;
+  height: 12rem;
+  align-items: center;
+  padding-inline: 7.5rem;
+  gap: 11px;
+  & img{
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+}
+
+h3{
+  font: var(--display-small);
+  font-family: 'Sora', sans-serif;
+  color: #fff;
+}

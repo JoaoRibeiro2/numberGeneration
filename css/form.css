@@ -1,0 +1,59 @@
+
+span{
+    color: var(--content-secondary);
+    font: var(--overline);
+    font-family: 'Roboto-flex', sans-serif;
+    margin-block: 1.3rem;
+  }
+form{
+    max-width: 70%;
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2px;
+    & label{
+      color: var(--content-secondary);
+      font: var(--label-medium);
+      font-family: 'Roboto-flex', sans-serif;
+    }
+  }
+  .number-wrapper{
+    display: flex;
+    grid-row: 1/2;
+    flex-direction: column;
+    gap: 0.5rem;
+    & input{
+    all: unset;
+    width: 6rem;
+    text-align: center;
+    height: 3.5rem;
+    border-radius: .5rem;
+    background: var(--background-secondary);
+    border: none;
+    padding-inline: 12px;
+    box-sizing: border-box;
+    color: #fff;
+    font: var(--display-small);
+    font-family: 'Sora', sans-serif;
+    grid-column: 2/3;
+    }
+  }
+
+  .radio-wrapper{
+    grid-row: 2/3;
+  }
+  button{
+    grid-row: 3/4;
+    grid-column: 1/4;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .25rem;
+    background: var(--background-tertiary);
+    border: none;
+    color: #fff;
+    font: var(--label-medium);
+    font-family: 'Roboto flex', sans-serif;
+  }
