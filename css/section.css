@@ -45,7 +45,7 @@
   /* background: blue; */
   grid-column: 2/3;
   & h3{
-    font: var(--display-small);
+  font: var(--display-small);
   font-family: 'Sora', sans-serif;
   color: #fff;
   }
@@ -55,25 +55,4 @@
     color: var(--content-secondary);
     font-family: 'Roboto-flex', sans-serif;
   }
-}
-.radio-wrapper{
-  width: 3rem;
-  height: 1.5rem;
-  background: #fff;
-  border-radius: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.radio-wrapper input{
-  all: unset;
-  width: 1.3rem;
-  height: 1.3rem;
-  border-radius: 50%;
-  /* background: red; */
-  transition: all 550ms;
-}
-.radio-wrapper input:checked{
-  background: blue;
 }

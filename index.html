@@ -43,25 +43,31 @@
         <form action="">
           <div class="number-wrapper">
             <label for="">NÚMEROS</label>
-            <input type="text" value="2">
+            <input id="numbers" type="text" >
           </div>
-          <div class="number-wrapper">
-            <label for="">DE</label>
-            <input type="text" value="1">
-          </div>
-          <div class="number-wrapper">
-            <label for="">DE</label>
-          <input type="text" value="100">
-          </div>
-          <div class="radio-wrapper">
-              <input type="radio" name="opcao" id="1" checked>
-              <input type="radio" name="opcao" id="2">
-          </div>
-          <button type="submit">SORTEAR
+          
+            <div class="number-wrapper">
+              <label for="">DE</label>
+              <input id="interval-one" class="numbers" type="text" >
+            </div>
+            <div  class="number-wrapper">
+              <label for="">DE</label>
+            <input id="interval-two" class="numbers" type="text" >
+            </div>
+            <div class="radio-group">
+              <div class="radio-wrapper">
+                <input type="radio" name="opcao" id="option1" value="option1"  checked>
+                <input type="radio" name="opcao" id="option2" value="option2" >
+              </div>
+              <label for="opcao">Não repetir número</label>
+            </div>
+          
+            <button type="submit">SORTEAR
             <img src="assets/arrow-right.svg" alt="">
           </button>
         </form>
       </section>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
