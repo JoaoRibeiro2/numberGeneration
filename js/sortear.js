@@ -1,10 +1,15 @@
 function randomNumberInterval(a, b){
-  return Math.floor(Math.random() * (b - a + 1)) + a // retorna 
-}
+  const sort = Math.floor(Math.random() * (b - a + 1)) + a // retorna 
 
-let value = 10
-
-for(let cont = 0; cont <= value; cont++){
-  let sort = randomNumberInterval(10, 20)
-    console.log(sort)
+  return sort
+  
 }
+function createArrayNumber(numbersSort){
+  const array = []
+  for(let value = 0; value < numbersSort; value++){
+    array.push(randomNumberInterval(10,20))
+  }
+  const newArray = [...new Set(array)]
+  console.log(newArray)
+}
+createArrayNumber(10)

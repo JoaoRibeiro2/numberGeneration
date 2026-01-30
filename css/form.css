@@ -48,23 +48,62 @@ form{
   .radio-wrapper{
     grid-row: 2/3;
   }
-  button{
+  .button_submit{
     grid-row: 3/4;
     grid-column: 1/4;
-    width: 100%;
+    height: 3.5rem;
+    width: 100%; /* Vai aplicar a largura de acordo com o conteúdo */
     display: flex;
     justify-content: center;
     align-items: center;
     gap: .25rem;
     background: var(--background-tertiary);
-    border: none;
-    color: #fff;
+    border: 1.5rem transparent;
     font: var(--label-medium);
     font-family: 'Roboto flex', sans-serif;
     border-radius: 8px;
+    position: relative;
     
   }
 
+  @keyframes gradientColors{
+    0%{
+      background: #77C0AF;
+    }
+    14.84%{
+      background: #D1DC97;
+    }
+    32.15%{
+      background: #E9A9B3;
+    }
+    65.79%{
+      background: #D586E0;
+    }
+    84.54%{
+      background: #91A1FA;
+    }
+    100%{
+      background: #77C0AF;
+    }
+  }
+  .button_submit:hover{
+    animation: gradientColors infinite 1.5s;
+  }
+  .button_submit:before{
+    content: "";
+    top: 0;
+    left: 0;
+    inset: 2px;
+    border-radius: 8px;
+    position: absolute;
+    border: 1.5rem;
+    background: var(--background-tertiary);
+  }
+  .button_submit:after{
+    content: attr(aria-label);
+    position: absolute;
+    color: #fff;
+  }
 
 .radio-group{
   display: flex;

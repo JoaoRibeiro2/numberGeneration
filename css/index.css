@@ -1,7 +1,7 @@
 @import url('global.css');
 @import url('section.css');
 @import url('form.css');
-
+@import url('result.css');
 body{
   background: var(--background-primary);
 }

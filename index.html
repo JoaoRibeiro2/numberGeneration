@@ -38,15 +38,29 @@
         </article>
       </section>
       <section class="form">
-        <h3>Quero sortear</h3>
-        <p>defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p>
+
+        <!-- <h3>Quero sortear</h3>
+        <p>defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p> -->
         <form action="">
-          <div class="number-wrapper">
+
+        <div class="result">
+          <h3>Resultado do sorteio</h3>
+          <span>Primeiro resultado</span>
+          <div>
+              <span>10</span>
+              <span>50</span>
+              <span>30</span>
+              <span>10</span>
+              
+          </div>
+
+          </div>
+            <!-- <div class="number-wrapper">
             <label for="">NÚMEROS</label>
             <input id="numbers" type="text" >
-          </div>
+          </div> -->
           
-            <div class="number-wrapper">
+            <!-- <div class="number-wrapper">
               <label for="">DE</label>
               <input id="interval-one" class="numbers" type="text" >
             </div>
@@ -60,14 +74,17 @@
                 <input type="radio" name="opcao" id="option2" value="option2" >
               </div>
               <label for="opcao">Não repetir número</label>
-            </div>
-          
-            <button type="submit">SORTEAR
-            <img src="assets/arrow-right.svg" alt="">
+            </div> -->
+
+            <button class="button_submit"
+            aria-label="SORTEAR"
+            img="assets/arrow-right.svg"
+            type="submit">
           </button>
         </form>
       </section>
     </div>
     <script src="js/script.js"></script>
+    <script src="js/sortear.js"></script>
   </body>
 </html>
