@@ -38,12 +38,20 @@ form{
     border: none;
     padding-inline: 12px;
     box-sizing: border-box;
-    color: #fff;
+    color: var(--content-brand);
     font: var(--display-small);
     font-family: 'Sora', sans-serif;
     grid-column: 2/3;
     }
+ & input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset;
+  -webkit-text-fill-color: var(--content-brand);
+  transition: background-color 9999s ease-in-out 0s;
+}
   }
+
 
   .radio-wrapper{
     grid-row: 2/3;

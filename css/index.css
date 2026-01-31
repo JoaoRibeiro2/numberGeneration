@@ -2,6 +2,7 @@
 @import url('section.css');
 @import url('form.css');
 @import url('result.css');
+@import url('utility.css');
 body{
   background: var(--background-primary);
 }

@@ -1,3 +1,4 @@
+
 function randomNumberInterval(a, b){
   const sort = Math.floor(Math.random() * (b - a + 1)) + a // retorna 
 
@@ -13,3 +14,5 @@ function createArrayNumber(numbersSort){
   console.log(newArray)
 }
 createArrayNumber(10)
+
+
