@@ -39,16 +39,16 @@
       </section>
       <section class="form">
         
-        <h3>Quero sortear</h3>
-        <p>defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p>
+        <h3 class="h3-form">Quero sortear</h3>
+        <p class="p-form">defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p>
 
-          <div id="result"class="result hidden">
+          <div id="result" class="result">
+              <div class="spans-group">
+              </div>
+              
           </div>
         <form action="">
-
-
-
-          
+          <fieldset>
             <div class="number-wrapper">
             <label for="">NÚMEROS</label>
             <input id="numbers" type="text" class="numbers" >
@@ -56,29 +56,37 @@
           
             <div class="number-wrapper">
               <label for="">DE</label>
-              <input id="interval-one" class="numbers" type="text" >
+              <input id="min" class="numbers" type="text" >
             </div>
             <div  class="number-wrapper">
               <label for="">DE</label>
-            <input id="interval-two" class="numbers" type="text" >
+            <input id="max" class="numbers" type="text" >
             </div>
             <div class="radio-group">
               <div class="radio-wrapper">
-                <input type="radio" name="option" id="option1" value="option1"  checked>
-                <input type="radio" name="option" id="option2" value="option2" >
+                <input type="radio" name="option" id="repeat" value="repeat"  checked>
+                <input type="radio" name="option" id="notRepeat" value="notRepeat" >
               </div>
               <label for="opcao">Não repetir número</label>
             </div>
-
+            </fieldset>
             <button class="button_submit"
             aria-label="SORTEAR"
-            img="assets/arrow-right.svg"
             type="submit">
+            <img src="assets/arrow-right.svg" alt="">
           </button>
         </form>
       </section>
     </div>
     <script type="module" src="js/script.js"></script>
-    <!-- <script src="js/sortear.js"></script>  -->
   </body>
 </html>
+
+
+  
+<!-- 
+
+  Próxima fase, organizar funções e formatar resultado
+
+
+-->
