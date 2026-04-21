@@ -48,6 +48,7 @@ form{
     font: var(--display-small);
     font-family: 'Sora', sans-serif;
     grid-column: 2/3;
+    cursor: pointer;
     }
  & input:-webkit-autofill,
    input:-webkit-autofill:hover,
@@ -61,6 +62,7 @@ form{
 
   .radio-wrapper{
     grid-row: 2/3;
+    cursor: pointer;
   }
   .button_submit{
     grid-row: 3/4;
