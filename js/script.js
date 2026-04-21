@@ -39,6 +39,7 @@ repeat.onclick = () =>{
 
 form.addEventListener("submit", (e) => {
   e.preventDefault()
+ 
 
   let interval_number = Number(interval.value)
   let min_number = Number(min.value)
@@ -76,6 +77,7 @@ form.addEventListener("submit", (e) => {
   button2.onclick = () => {
     location.reload()
   }
+
 })
 
 function formatResult(title, subTitle){
